@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 0 auto;
+        background-color: rgba(128, 128, 128, 0.353);
+        width: 800px;
+        height: 210px;
+        text-align: center;
+    }
+    table{
+        margin-left: 220px;
+    }
+    .tieuDeBang{
+        width: 100px;
+        float: right;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="tieuDe">
+            <h2>Sở Thích Của Bạn</h2>
+        </div>
+        <table style="width: 380px;">
+            <tr>
+                <td class="tieuDeBang"><label for="name">Họ và Tên</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td class="tieuDeBang"><label for="Email">Email</label></td>
+                <td><input type="email" id="Email"></td>
+            </tr>
+            <tr>
+                <td class="tieuDeBang"><label for="hoppy">Sở Thích</label></td>
+                <td style="padding-left: 40px;"><input type="checkbox" name="hoppy" id="1">Thể Thao
+                    <input type="checkbox" name="hoppy" id="2">Âm Nhạc
+                    <input type="checkbox" name="hoppy" id="3">Đọc Sách
+                    <input type="checkbox" name="hoppy" id="4">Lướt Web
+                    <input type="checkbox" name="hoppy" id="5">Chơi Game
+                    <input type="checkbox" name="hoppy" id="6">Điện Ảnh
+                    <input type="checkbox" name="hoppy" id="7">Du Lịch
+                </td>
+            </tr>
+        </table>
+        <button>Gửi Thông Tin</button>
+        <button>Nhập Lại</button>
+    </div>
+</body>
+</html>

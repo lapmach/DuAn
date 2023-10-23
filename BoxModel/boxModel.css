@@ -1,0 +1,12 @@
+.box{
+    width: 300px;
+    border: 30px solid green;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box h1{
+    background-color: rgba(105, 90, 205, 0.39);
+    color: green;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .menu1{
+        list-style-type: none;
+        text-align: center;
+        background-color: #272882;
+        height: 80px;
+    }
+
+    .menu1>li{
+        display: inline;
+        padding-right: 20px;
+        line-height: 80px;
+        font-size: 24px;
+        color: white;
+    }
+    .menu2{
+        list-style-type: none;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        width: 260px;
+        background-color: #272882;
+    }
+
+    .menu3{
+        list-style-type: none;
+        position: absolute;
+        display: none;
+        left: 250px;
+        bottom: -180px;
+        width: 200px;
+        background-color: #272882;
+    }
+    .menu1 .menu1_select .menu2{
+        display: none;
+    }
+
+    .menu1_select{
+        position: relative;
+    }
+    .menu2_select:hover .menu3{
+        display: block;
+    }
+
+    .menu1_select:hover >.menu2{ 
+        display: block;
+    }
+    .menu2 >li:hover{
+        opacity: 0.5;
+    }
+    .menu2 >li:last-child:hover{
+        opacity: 1;
+    }
+    .menu3>li:hover{
+        opacity: 0.5;
+    }
+    .menu1 >li:first-child:hover{
+        opacity: 1;
+    }
+    .menu1>li:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <ul class="menu1">
+        <li class="menu1_select">Khóa Học
+            <ul class="menu2">
+                <li>Kĩ Sư CNTT - Đại Học</li>
+                <li>Bootcamp full time</li>
+                <li>Bootcamp part time</li>
+                <li>Khóa Học Từ Xa</li>
+                <li class="menu2_select">Khoá Học Miễn Phí
+                    <ul class="menu3">
+                        <li>khóa học 1</li>
+                        <li>khóa học 2</li>
+                        <li>khóa học 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Lịch Khai Giảng</li>
+        <li>Kiến Thức</li>
+        <li>Tin Tức</li>
+        <li>Về CodeGym</li>
+    </ul>
+</body>
+</html>
