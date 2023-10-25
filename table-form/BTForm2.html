@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-transform: uppercase;
+    }
+    div{
+        margin: 0 auto;
+        width: 800px;
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <form action="">
+        <div>
+            <header>
+                <h1>Đăng kí học viên</h1>
+            </header>
+            <table style="width: 600px;">
+                <tr>
+                    <td><label for="name">Họ và Tên</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="NgSinh">Ngày Sinh</label></td>
+                    <td><input type="date" id="NgSinh"></td>
+                </tr>
+                <tr>
+                    <td><label for="GioiTinh">Giới Tính</label></td>
+                    <td>
+                        <input type="radio" name="GioiTinh" value="1">Nam
+                        <input type="radio" name="GioiTinh" value="2">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="DiaChi">Địa Chỉ</label></td>
+                    <td><textarea name="DiaChi" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="Lop">Lớp</label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="0">--Chọn lớp--</option>
+                            <option value="1">Lớp 1</option>
+                            <option value="2">Lớp 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="sdt">Số Điện Thoại</label></td>
+                    <td><input type="number" id="sdt"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button>Đăng kí</button>
+                        <button>Nhập Lại</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
