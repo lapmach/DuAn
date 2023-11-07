@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .grid_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px 100px 100px;
+        gap: 5px;
+        background-color: antiquewhite;
+    }
+    .grid_item{
+        padding: 20px;
+        background-color: aqua;
+    }
+    .item_head{
+        grid-column: 1/4;
+    }
+    .item_menu{
+        grid-row: 2/4;
+    }
+    .item_footer{
+        grid-column: 2/4;
+    } */
+    .grid_container{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "menu left main right"
+        "menu footer footer right";
+        grid-template-rows: 100px 100px 100px;
+        gap: 5px;
+        background-color: antiquewhite;
+    }
+    .grid_item{
+        padding: 20px;
+        background-color: aqua;
+    }
+    .item_head{
+        grid-area: header;
+    }
+    .item_left{
+        grid-area: left;
+    }
+    .item_main{
+        grid-area: main;
+    }
+    .item_right{
+        grid-area: right;
+    }
+    .item_menu{
+        grid-area: menu;
+    }
+    .item_footer{
+        grid-area: footer;
+    }
+
+    @media screen and (max-width: 566px){
+        .grid_container{
+            grid-template-areas: 
+            "header"
+            "menu" 
+            "main"
+            "left"
+            "right"
+            "footer";
+            grid-template-rows: 50px 40px 100px 50px 50px 60px;
+        }
+    }
+
+    @media screen and (min-width: 567px){
+        .grid_container{
+            grid-template-areas: 
+            "header header"
+            "menu left" 
+            "main right"
+            "footer footer";
+            grid-template-rows: 50px 100px 100px 50px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .grid_container{
+            grid-template-areas: 
+            "header header header header"
+            "menu left main right"
+            "menu footer footer right";
+            grid-template-rows: 100px 100px 100px;
+        }
+    }
+
+   
+</style>
+<body>
+    <div class="grid_container">
+        <div class="grid_item item_head">Header</div>
+        <div class="grid_item item_left">left</div>
+        <div class="grid_item item_menu">Menu</div>
+        <div class="grid_item item_main">Main</div>
+        <div class="grid_item item_right">Right</div>
+        <div class="grid_item item_footer">Footer</div>
+    </div>
+</body>
+</html>
